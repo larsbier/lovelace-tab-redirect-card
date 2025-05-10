@@ -16,7 +16,7 @@ class TabRedirectCard extends HTMLElement {
 		if(!tabs) {
 			tabs = uiRoot.shadowRoot.querySelector('paper-tabs');
 		}
-		const tabList = tabs.querySelectorAll('paper-tab');
+		const tabList = tabs.querySelectorAll('sl-tab');
 
 		const userConfigs = this.config.redirect.filter((item) => item.user === hass.user.name);
 		userConfigs.forEach((config) => {
